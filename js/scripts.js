@@ -1,5 +1,7 @@
 function binaryConvert(decimalNum) {
-  if (decimalNum === 0) {
+  if (decimalNum === 1) {
+    return 1;
+  } else if (decimalNum === 0) {
     return 0;
   } else {
     return NaN;
