@@ -50,6 +50,11 @@ $(document).ready(function() {
 
   $("button#decimal-convert").click(function() {
     var binaryString = $("input#number").val();
-    console.log(decimalConvert(binaryString));
+    var result = decimalConvert(binaryString);
+    if (result === "Error" || result === "") {
+      $(".output").text("Please enter a binary number.");
+    } else {
+      $(".output").text(result);
+    }
   });
 });
