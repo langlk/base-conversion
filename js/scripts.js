@@ -26,4 +26,8 @@ $(document).ready(function() {
       $(".output").text(result);
     }
   });
+
+  $("button#decimal-convert").click(function() {
+    var binaryNumber = $("input#number").val();
+  });
 });
