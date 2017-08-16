@@ -17,7 +17,9 @@ function binaryConvert(decimalNum) {
 }
 
 function decimalConvert(binaryString) {
-  if (binaryString === "0") {
+  if (binaryString === "1") {
+    return 1;
+  } else if (binaryString === "0") {
     return 0;
   } else {
     return "";
