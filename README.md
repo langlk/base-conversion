@@ -1,8 +1,8 @@
 ## Specifications
 
-* The program returns NaN when given an empty string.
+* The program returns an empty string when given an empty input.
   * Example Input: ""
-  * Example Output: NaN
+  * Example Output: ""
 * The program should return 0 when the input is 0.
   * Example Input: 0
   * Example Output: 0

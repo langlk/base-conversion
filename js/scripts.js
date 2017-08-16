@@ -12,14 +12,18 @@ function binaryConvert(decimalNum) {
   } else if (decimalNum === 0) {
     return "0";
   } else {
-    return NaN;
+    return "";
   }
 }
 
 $(document).ready(function() {
-  $("form").submit(function(event) {
-    event.preventDefault();
+  $("button#binary-convert").click(function() {
     var decimalNum = parseInt($("input#number").val());
-    $(".output").text(binaryConvert(decimalNum));
+    var result = binaryConvert(decimalNum);
+    if (result === "") {
+      $(".output").text("Please enter a number.");
+    } else {
+      $(".output").text(result);
+    }
   });
 });
