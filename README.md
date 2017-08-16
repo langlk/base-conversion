@@ -9,13 +9,9 @@
 * The program should return 1 when the input is 1.
   * Example Input: 1
   * Example Output: 1
-* The program should return 10 when the input is 2.
+* The program should return _1 + (input / (2^n)) % 2 + ... + input % 2_ for inputs greater than 1.
   * Example Input: 2
   * Example Output: 10
-* The program should return 11 when the input is 3.
-  * Example Input: 3
-  * Example Output: 11
-* The program should return _1 + (input / (2^n)) % 2 + ... + input % 2_ for inputs greater than 1.
   * Example Input: 4
   * Example Output: 100
   * Example Input: 5

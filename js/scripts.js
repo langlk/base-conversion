@@ -20,6 +20,6 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
     var decimalNum = parseInt($("input#number").val());
-    console.log(binaryConvert(decimalNum));
+    $(".output").text(binaryConvert(decimalNum));
   });
 });
