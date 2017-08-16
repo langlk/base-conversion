@@ -16,6 +16,10 @@ function binaryConvert(decimalNum) {
   }
 }
 
+function decimalConvert(binaryNum) {
+  return "";
+}
+
 $(document).ready(function() {
   $("button#binary-convert").click(function() {
     var decimalNum = parseInt($("input#number").val());
@@ -28,6 +32,7 @@ $(document).ready(function() {
   });
 
   $("button#decimal-convert").click(function() {
-    var binaryNumber = $("input#number").val();
+    var binaryNum = $("input#number").val();
+    console.log(decimalConvert(binaryNum));
   });
 });
