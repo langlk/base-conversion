@@ -17,7 +17,14 @@ function binaryConvert(decimalNum) {
 }
 
 function decimalConvert(binaryString) {
-  if (binaryString === "1") {
+  if (binaryString.length > 1) {
+    var priorValue = 0;
+    for (var i = 0; i < binaryString.length; i++) {
+      var nextBit = parseInt(binaryString.charAt(i));
+      priorValue = priorValue * 2 + nextBit;
+    }
+    return priorValue;
+  } else if(binaryString === "1") {
     return 1;
   } else if (binaryString === "0") {
     return 0;
