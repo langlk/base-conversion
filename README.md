@@ -2,10 +2,7 @@
 
 * The program does nothing when given an empty string.
   * Example Input: ""
-  * Example Output: ""
-* The program returns undefined when given a non-base-ten input.
-  * Example Input: "Oxffffff"
-  * Example Output: undefined
+  * Example Output: 
 * The program should return 0 when the input is 0.
   * Example Input: 0
   * Example Output: 0
