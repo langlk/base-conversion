@@ -16,8 +16,12 @@ function binaryConvert(decimalNum) {
   }
 }
 
-function decimalConvert(binaryNum) {
-  return "";
+function decimalConvert(binaryString) {
+  if (binaryString === "0") {
+    return 0;
+  } else {
+    return "";
+  }
 }
 
 $(document).ready(function() {
@@ -32,7 +36,7 @@ $(document).ready(function() {
   });
 
   $("button#decimal-convert").click(function() {
-    var binaryNum = $("input#number").val();
-    console.log(decimalConvert(binaryNum));
+    var binaryString = $("input#number").val();
+    console.log(decimalConvert(binaryString));
   });
 });

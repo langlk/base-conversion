@@ -39,3 +39,6 @@
   * Example Output: 5
   * Example Input: 101100101
   * Example Output: 357
+* Decimal convert should return "Error" when input is not a binary string.
+  * Example Input: 12
+  * Example Output: "Error"
