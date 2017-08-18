@@ -37,6 +37,16 @@ function decimalConvert(binaryString) {
   }
 }
 
+function anyBaseToDecimal(number, base) {
+  var n = number.length;
+  var s = 0;
+  for (var i = 0; i < number.length; i++) {
+    n -= 1;
+    s += parseInt(number.charAt(i)) * Math.pow(base, n);
+  }
+  return s;
+}
+
 $(document).ready(function() {
   $("button#binary-convert").click(function() {
     var decimalNum = parseInt($("input#number").val());
@@ -51,6 +61,7 @@ $(document).ready(function() {
   $("button#decimal-convert").click(function() {
     var binaryString = $("input#number").val();
     var result = decimalConvert(binaryString);
+    console.log(anyBaseToDecimal(binaryString,2));
     if (result === "Error" || result === "") {
       $(".output").text("Please enter a binary number.");
     } else {
