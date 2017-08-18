@@ -41,8 +41,14 @@ function anyBaseToDecimal(number, base) {
   var n = number.length;
   var s = 0;
   for (var i = 0; i < number.length; i++) {
+    var value = 0;
+    if (number.charCodeAt(i) >= 97 && number.charCodeAt(i) <= 122) {
+      value = number.charCodeAt(i) - 87;
+    } else {
+      value = parseInt(number.charAt(i));
+    }
     n -= 1;
-    s += parseInt(number.charAt(i)) * Math.pow(base, n);
+    s += value * Math.pow(base, n);
   }
   return s;
 }
@@ -61,7 +67,6 @@ $(document).ready(function() {
   $("button#decimal-convert").click(function() {
     var binaryString = $("input#number").val();
     var result = decimalConvert(binaryString);
-    console.log(anyBaseToDecimal(binaryString,2));
     if (result === "Error" || result === "") {
       $(".output").text("Please enter a binary number.");
     } else {
