@@ -1,3 +1,18 @@
+# _Base Conversion_
+
+#### _Epicodus Practice in JavaScript, August 18, 2017_
+
+#### By Kelsey Langlois and Luciano Oliveira
+
+## Description
+
+_Site that performs Binary to Decimal (and reverse) conversion. Other conversions still in progress._
+
+## Setup/Installation Requirements
+
+* Clone this repository
+* Open index.html in web browser
+
 ## Specifications
 
 #### Decimal to Binary
@@ -42,3 +57,20 @@
 * Decimal convert should return "Error" when input is not a binary string.
   * Example Input: 12
   * Example Output: "Error"
+  
+## Support and contact details
+
+Please contact Kelsey Langlois with questions, comments, or issues.
+
+## Technologies Used
+
+* JavaScript
+* HTML
+* CSS
+* Bootstrap
+
+### License
+
+*This software is licensed under the MIT license.*
+
+Copyright (c) 2017 **_Kelsey Langlois and Luciano Oliveira_**
