@@ -67,7 +67,6 @@ Please contact Kelsey Langlois with questions, comments, or issues.
 * JavaScript
 * HTML
 * CSS
-* Bootstrap
 
 ### License
 
